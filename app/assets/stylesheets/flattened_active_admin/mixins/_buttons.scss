@@ -39,14 +39,15 @@
 
 @mixin light-button {
   @include basic-button;
-  background: $action-button-default-background;
-  @include border-colors(#d3d3d3, #c7c7c7, #c2c2c2);
-  color: $action-button-default-text;
+  background: #E91E63;//$action-button-default-background;
+  @include border-colors(#E91E63, #E91E63, #E91E63);//#d3d3d3, #c7c7c7, #c2c2c2);
+  color: #FFFFFF;//$action-button-default-text;
+  font-weight: bold;
 
   &:not(.disabled) {
     &:hover {
-      background: $action-button-hover-background;
-      color: $action-button-hover-text;
+      background: #C2185B;//$action-button-hover-background;
+      color: #F8F8F8;//$action-button-hover-text;
     }
 
     &:active {

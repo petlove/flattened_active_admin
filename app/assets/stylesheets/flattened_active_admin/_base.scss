@@ -42,19 +42,19 @@ body {
 }
 
 // Clear Filter + Batch actions buttons
-form.filter_form a.clear_filters_btn, 
-a.table_tools_button, 
-.table_tools .dropdown_menu_button, 
-form fieldset.buttons li.cancel a, 
+form.filter_form a.clear_filters_btn,
+a.table_tools_button,
+.table_tools .dropdown_menu_button,
+form fieldset.buttons li.cancel a,
 form fieldset.actions li.cancel a,
 .ui-dialog .ui-dialog-buttonpane button:last-child{
-  background-color: $secondary-color !important;
+  background-color: #999 !important;
   border: solid 1px lighten($primary-color, 50%) !important;
 }
 
 
 // Table styling
-form fieldset legend span, 
+form fieldset legend span,
 table.index_table th,
 .sidebar_section > h3 {
   border-left: 0 !important;
@@ -65,7 +65,7 @@ table.index_table th:last-child {
 }
 
 table.index_table tr.even {
-  background-color: #fff !important;
+  background-color: #f8f8f8 !important;
 
   td {
     background: none !important;
@@ -74,7 +74,7 @@ table.index_table tr.even {
 
 table.index_table tr.selected {
   background-color: $secondary-color !important;
-  
+
   td {
     background: none !important;
   }
@@ -82,7 +82,7 @@ table.index_table tr.selected {
 // Form styling
 .sidebar_section,form fieldset.inputs {
   background-color: #fff !important;
-  border: 1px solid $secondary-color !important;
+  border-bottom: 2px solid $secondary-color !important;
 }
 
 form input[type=text], form input[type=password], form input[type=email], form input[type=number], form input[type=url], form input[type=tel], form textarea {
@@ -131,4 +131,3 @@ $text-input-horizontal-padding: 10px !default;
 $text-input-total-padding: $text-input-horizontal-padding * 2 + $border-width * 2;
 
 $blank-slate-border: 1px dashed #DADADA !default;
-

@@ -57,8 +57,8 @@
     & > li {
       display: inline-block;
       margin-right: 4px;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-top: 15px;
+      margin-bottom: 15px;
       font-size: 1.0em;
       position: relative;
 
@@ -70,32 +70,31 @@
       }
 
       &.current > a {
-        background: $current-menu-item-background;
+        background: #0090ce;//$current-menu-item-background;
         color: #fff;
       }
 
       &.has_nested > a {
-        background: image-url('active_admin/nested_menu_arrow.gif') no-repeat calc(100% - 7px) 50%;
+        background: image-url('active_admin/nested_menu_arrow.png') no-repeat calc(100% - 7px) 50%;
         padding-right: 20px;
       }
 
       &.has_nested.current > a {
-        background: $current-menu-item-background image-url('active_admin/nested_menu_arrow_dark.gif') no-repeat calc(100% - 7px) 50%;
+        background: #0090ce image-url('active_admin/nested_menu_arrow.png') no-repeat calc(100% - 7px) 50%;
         padding-right: 20px;
       }
 
       &:hover > a {
-        background: lighten($current-menu-item-background, 10%);
-        color: #fff;
+        // background: lighten($current-menu-item-background, 10%);
+        // color: #fff;
       }
 
       &.has_nested:hover > a {
         @include rounded-top(10px);
         border-bottom: 5px solid lighten($current-menu-item-background, 10%);
-        background: lighten($current-menu-item-background, 10%) image-url('active_admin/nested_menu_arrow_dark.gif') no-repeat calc(100% - 7px) 50%;
+        background: lighten($current-menu-item-background, 10%) image-url('active_admin/nested_menu_arrow.png') no-repeat calc(100% - 7px) 50%;
         z-index: 1020;
       }
-
 
       /* Hover on li, display the ul */
       &:hover ul { display: block;}
@@ -120,7 +119,7 @@
             color: $header-dropdown-menu-text-color;
             background: none;
             display: block;
-            &:hover { color: #fff; background: lighten($current-menu-item-background, 5%);; }
+            // &:hover { color: #fff; background: lighten($current-menu-item-background, 5%);; }
           }
 
           &.current {

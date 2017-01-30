@@ -17,13 +17,14 @@ table.index_table {
 
   th {
     @include section-header;
+    background-color: #039be5;
     border-right: none;
     text-align: left;
     padding-left: $cell-horizontal-padding;
     padding-right: $cell-horizontal-padding;
 
     a, a:link, a:visited {
-      color: $section-header-text-color;
+      color: #FFF;//$section-header-text-color;
       text-decoration: none;
       display: block;
       white-space: nowrap;
@@ -38,7 +39,7 @@ table.index_table {
     &.sorted-desc a {  background-position: 0 -56px;}
 
     &.sorted-asc, &.sorted-desc {
-      background: $title-bar-background; // @include gradient(darken($secondary-gradient-start, 5%), darken($secondary-gradient-stop, 5%));
+      background: #0090ce;//$title-bar-background; // @include gradient(darken($secondary-gradient-start, 5%), darken($secondary-gradient-stop, 5%));
     }
 
     &:last-child {

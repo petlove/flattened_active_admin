@@ -6,8 +6,9 @@
   border-bottom-color: #EEE;
   width: 100%;
   position: relative;
+  background-color: #F8F8F8;
   margin: 0;
-  padding: 10px $horizontal-page-margin;
+  padding: 20px $horizontal-page-margin;
   z-index: 800;
 
   #titlebar_left, #titlebar_right {
