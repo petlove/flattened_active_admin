@@ -91,6 +91,7 @@ form input[type=text], form input[type=password], form input[type=email], form i
 
 // Dropdown menu styling
 .dropdown_menu .dropdown_menu_list_wrapper {
+  z-index: 999999;
   box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px !important;
   background-color: $primary-color !important;
   border: solid 1px $primary-color !important;
